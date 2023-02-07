@@ -1,20 +1,19 @@
+import {Link} from 'react-router-dom'
+
 const Categorias = () => {
     return (
-            <li className="nav-item dropdown">
+            <ul className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorías</a>
                 <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">Aperitivos</a>
-                    <a className="dropdown-item" href="#">Cervezas</a>
-                    <a className="dropdown-item" href="#">Gin</a>
-                    <a className="dropdown-item" href="#">Ron</a>
-                    <a className="dropdown-item" href="#">Vino</a>
-                    <a className="dropdown-item" href="#">Vodka</a>
-                    <a className="dropdown-item" href="#">Whysky</a>
-                    <a className="dropdown-item" href="#">Bebidas sin Alcohol</a>
+                    <li><Link className="dropdown-item" to={"/category/aperitivos"}>Aperitivos</Link></li>
+                    <li><Link className="dropdown-item" to={"/category/bebidaBlanca"}>Bebida Blanca</Link></li>
+                    <li><Link className="dropdown-item" to={"/category/sinAlcohol"}>Bebidas Sin Alcohol</Link></li>
+                    <li><Link className="dropdown-item" to={"/category/cervezas"}>Cervezas</Link></li>
+                    <li><Link className="dropdown-item" to={"/category/vinos"}>Vinos</Link></li>
                     <div className="dropdown-divider" />
-                    <a className="dropdown-item" href="#">Ver todo</a>
+                    <li><Link className="dropdown-item" to={"/"}>Ver Todo</Link></li>
                 </div>
-            </li>
+            </ul>
     );
 }
 

@@ -1,10 +1,21 @@
-.card {
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-top: 20px;
-  }  
+.cardProductos {
+  margin:4px;
+  align-items: center;
+  justify-content: center;
+  }
+
+.cardProducto{
+  width: 18rem;
+  margin: 6px;
+  background-color: beige
+}
+
+.card{
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
   .producto-title {
     text-transform: uppercase;
     text-align: center;
